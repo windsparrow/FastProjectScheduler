@@ -30,3 +30,23 @@ The flexible job shop problem (FJSP) is a generalization of the classical job sh
 The difference between the FJSP and the classical job shop problem is that in the FJSP, each task can be processed by any machine from a given set of alternative machines, instead of being assigned to a fixed machine12. This adds more flexibility and complexity to the problem, as it requires solving two sub-problems: the assignment problem (which machine to use for each task) and the scheduling problem (when and in what order to perform each task on each machine)2.
 
 The FJSP is an NP-hard problem, which means that there is no known efficient algorithm that can find an optimal solution in polynomial time. Therefore, various heuristic and metaheuristic methods have been proposed to find approximate solutions for this problem.
+
+## How to use it
+
+First, please split your project tasks in advance, and evaluate the time and resources required for each subtask, as well as the current available resources, and fill in according to the template in “data-input/project-task-list.xlsx”.
+
+Second, install program dependencies by executing the following command:
+
+'''
+pip install -r requirements.txt
+'''
+
+Third, enter the src directory and execute the program script with the following command:
+
+'''
+python scheduler.py
+'''
+
+After the script runs, it will save the optimal planning result of the project tasks (planned according to the shortest time) in the “schedule-output” folder.
+
+If you want more features , you can contact me on the github.
